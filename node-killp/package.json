@@ -1,0 +1,59 @@
+{
+  "name": "node-killp",
+  "version": "1.0.0",
+  "description": "A custom HTTP server with comprehensive request/response logging",
+  "main": "index.js",
+  "types": "types.d.ts",
+  "scripts": {
+    "start": "node index.js",
+    "test": "jest",
+    "type-check": "tsc --noEmit",
+    "type-check:watch": "tsc --noEmit --watch",
+    "lint": "eslint .",
+    "prepare": "npm run type-check && npm run lint",
+    "prepublishOnly": "npm test"
+  },
+  "keywords": [
+    "http",
+    "server",
+    "logging",
+    "monitoring",
+    "request",
+    "response"
+  ],
+  "author": "Your Name <your.email@example.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "winston": "^3.11.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.11.19",
+    "@types/winston": "^2.4.4",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsdoc": "^48.0.1",
+    "jest": "^29.7.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.3.3"
+  },
+  "files": [
+    "lib/**/*.js",
+    "index.js",
+    "types.d.ts",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/node-killp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/node-killp/issues"
+  },
+  "homepage": "https://github.com/your-username/node-killp#readme"
+}
