@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES2020",
+      "module": "CommonJS",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "allowJs": true,
+      "checkJs": true,
+      "noEmit": true
+    },
+    "include": ["**/*.js"],
+    "exclude": ["node_modules"]
+  }
